@@ -1,0 +1,77 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Define this to take 4 child items arranged horizontally */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 0px;
+    background-color: aliceblue;
+    width: 95vw;
+    margin: 10px auto;
+}
+
+.countryList1, .countryList2, .countryList3, .countryList4, .countryList5, .countryList6 {
+    flex: 1;
+    min-width: 0;
+    border: 1px solid rgb(145, 3, 3);
+}
+
+.countryList1 ul, .countryList2 ul, .countryList3 ul, .countryList4 ul, .countryList5 ul, .countryList6 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid rgb(145, 3, 3); */
+    box-shadow: 0 2px 2px rgba(145, 3, 3, 0.1);
+}
+
+.groupTitle {
+    font-size: 10px;
+    border-left: 5px solid rgb(25, 227, 10);
+    text-align: center;
+    background-color: rgb(145, 3, 3);
+    color: white;
+    padding: 5px;
+    flex: 1;
+}
+
+/* Put nice animation on .groupTile:hover */
+.groupTitle:hover {
+    background-color: rgb(2, 131, 9);
+    color: white;
+    cursor: pointer;
+    border: 2px solid #50f210;
+}
+
+.groupItem {
+    display: flex;
+    align-items:flex-start;
+    border: 1px solid rgb(145, 3, 3);
+    font-size: 10px;
+    padding:5px;
+    background-color: rgb(156, 228, 248);
+}
+
+.groupItem img {
+    width: 14px;
+    height: 10px;
+    margin-right: 10px;
+    border: 1px solid #55ea1a;
+    border-radius: 2px;
+    align-items: flex-end;
+}
+
+.groupItem:hover {
+    background-color: rgb(145, 3, 3);
+    color: white;
+    cursor: pointer;
+    border: 2px solid #50f210;
+}

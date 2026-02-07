@@ -1,0 +1,80 @@
+
+.container1 {
+    display: grid;
+    width: 80vw;
+    margin: 0; /* centered by body flexbox */
+    background-color: #f0f0f0;
+    gap: 2px;
+    padding: 10px;
+    border-radius: 0px;
+    border: 1px solid #ccc;
+    justify-items: center; /* center items horizontally */
+    align-items: center; /* center items vertically */
+}
+.container2 {
+    display: grid;
+    width: 80vw;
+    margin: 0; /* centered by body flexbox */
+    background-color: #f0f0f0;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 2px;
+    padding: 10px;
+    border-radius: 0px;
+    border: 1px solid #ccc;
+    justify-items: center; /* center items horizontally */
+    align-items: center; /* center items vertically */
+}
+.container3 {
+    display: grid;
+    width: 80vw;
+    margin: 0; /* centered by body flexbox */
+    background-color: #f0f0f0;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    padding: 10px;
+    border-radius: 0px;
+    border: 1px solid #ccc;
+    justify-items: center; /* center items horizontally */
+    align-items: center; /* center items vertically */
+}
+.container4 {
+    display: grid;
+    width: 80vw;
+    margin: 0; /* centered by body flexbox */
+    background-color: #f0f0f0;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 2px;
+    padding: 10px;
+    border-radius: 0px;
+    border: 1px solid #ccc;
+    justify-items: center; /* center items horizontally */
+    align-items: center; /* center items vertically */
+}
+.container5 {
+    display: grid;
+    width: 80vw;
+    margin: 0; /* centered by body flexbox */
+    background-color: #f0f0f0;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 2px;
+    padding: 10px;
+    border-radius: 0px;
+    border: 1px solid #ccc;
+    justify-items: center; /* center items horizontally */
+    align-items: center; /* center items vertically */
+}
+.container6 {
+    display: grid;
+    width: 80vw;
+    margin: 0; /* centered by body flexbox */
+    background-color: #f0f0f0;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px;
+    gap: 2px;
+    padding: 10px;
+    border-radius: 0px;
+    border: 1px solid #ccc;
+    justify-items: center; /* center items horizontally */
+    align-items: center; /* center items vertically */
+}
+

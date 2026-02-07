@@ -1,0 +1,76 @@
+
+body {
+    background-color: #ddd;
+    margin: 0; /* remove default margin so centering works predictably */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: Black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; /* vertical centering */
+    justify-content: center; /* horizontal centering */
+}
+
+.container {
+    display: grid;
+    width: 80vw;
+    max-width: 1200px;
+    margin: 0; /* centered by body flexbox */
+    background-color: gold;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.player-card {
+    border: 2px solid purple;
+    background-color: lavender;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-image {
+    width: 120px;
+    height: 200px;
+    border-radius: 8px;
+    border: 1px solid purple;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.player-name {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.stats {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: rgba(128, 0, 128, 0.1);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.stat-label {
+    font-weight: bold;
+    color: purple;
+}
+
+.stat-value {
+    color: #333;
+}
