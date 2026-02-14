@@ -1,0 +1,41 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 10px;
+    align-content: center;
+    width:40vw;
+}
+
+.grid-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    border-radius: 8px;
+    border: 1px solid purple;
+    box-shadow: 1px 1px 5px rgba(145, 4, 173, 0.4);
+}
+
+.grid-item img{
+    height: 180px;
+    width: 1auto;
+}
+
+.grid-item img:hover {
+    transform: scale(1.3) rotate(360deg);
+    transition: all 0.3s ease;
+    border: 2px solid purple;
+    border-radius: 50%;
+    cursor: pointer;
+}
