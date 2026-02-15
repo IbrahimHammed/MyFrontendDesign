@@ -12,7 +12,6 @@ body {
 
 .container {
     width: 80vw;
-    height: 70vh;
     background-color: white;
     background-size: cover;
     background-position: center;
@@ -49,23 +48,26 @@ body {
 }
 
 #menu {
-    justify-content: center;
-    align-items: center;
     background-color: white;
     font-size: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 #menu ul {
     list-style: none;
+    margin: 15px;
+    padding: 0;
 }
 
 #menu ul li {
-    margin: 15px;
+    margin: 5px;
     background-color: rgb(7, 82, 147);
-    padding: 5px;
+    padding: 10px;
     border-radius: 8px;
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 
 #menu ul li:hover {
@@ -81,4 +83,46 @@ body {
     width: 100%;
     height: 55%;
     object-fit: cover;
+}
+
+#content p {
+    text-align: justify;
+}
+
+
+#content .social-icons {
+    display: flex;
+    width: 60vw;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-icons .link {
+    height: 32px;
+    width: 32px;
+    background-color: #4070f4;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+#facebook{
+    background-color: #3b5998;
+}
+
+#twitter{
+    background-color: #1da1f2;
+}
+
+#instagram{
+    background-color: #e1306c;
+}
+
+#youtube{
+    background-color: #ff0000;
 }
