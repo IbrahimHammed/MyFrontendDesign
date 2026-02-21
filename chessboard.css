@@ -1,0 +1,39 @@
+
+body {
+    background-color: #b9e5fd;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 1px;
+    width: 800px;
+    height: 800px;
+    background-color: aliceblue;
+    margin: 100px;
+    border: 20px solid white;
+}
+
+[class^="grid-item"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > div:nth-child(odd):nth-child(-n + 8),
+.container > div:nth-child(even):nth-child(n + 9):nth-child(-n + 16),
+.container > div:nth-child(odd):nth-child(n + 17):nth-child(-n + 24),
+.container > div:nth-child(even):nth-child(n + 25):nth-child(-n + 32),
+.container > div:nth-child(odd):nth-child(n + 33):nth-child(-n + 40),
+.container > div:nth-child(even):nth-child(n + 41):nth-child(-n + 48),
+.container > div:nth-child(odd):nth-child(n + 49):nth-child(-n + 56),
+.container > div:nth-child(even):nth-child(n + 57):nth-child(-n + 64) {
+    background-color: rgb(235, 199, 106);
+}
+
+
+[class^="grid-item"] span {
+    font-size: 60px;
+    color: rgb(25, 2, 226);
+}
