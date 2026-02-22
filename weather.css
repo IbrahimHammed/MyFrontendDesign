@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background image with 40% opacity */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("weather.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4; /* 60% opacity */
+    z-index: -1; /* keeps it behind all content */
+}
+
+.headerContainer {
+    display: grid;
+    width: 30vw;
+    grid-template-columns: 1fr;
+
+    /* Move this container to the center */
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+
+.headerContainer h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.bodyContainer {
+    display: grid;
+    /* This gives 5 equal columns */
+    grid-template-columns: repeat(5, 1fr);
+
+    /* This gives 8 rows of 50px height */
+    grid-template-rows: repeat(8, 50px);
+
+    /* This gives a container that takes 30% of the screen width */
+    width: 30vw;
+
+    /* Move this container to the center */
+    position: absolute;
+    top: 15%;
+    left: 35%;
+
+    border: 3px solid blue;
+    border-radius: 10px;
+}
+
+/* This used to centralise items in all grid items */
+[class^="grid-item"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+}
+
+/* This is used to style the emoji for weather conditions */
+[class^="grid-item"] span {
+    color: blue;
+}
+
+/* This is used to style the grid items headers from Day to Status */
+.grid-item-1, .grid-item-2, .grid-item-3, .grid-item-4, .grid-item-5 {
+    background-color: blue;
+    color: white;
+}
